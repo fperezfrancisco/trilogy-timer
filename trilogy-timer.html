@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilogy Timer</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(221, 214, 214);
+            font-family: sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            margin: 1% 5%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0% 5%;
+            border-bottom: 1px solid rgb(221, 214, 214);
+            margin-bottom: 5%;
+        }
+
+        button {
+            font-variant-caps: all-petite-caps;
+            width: 120px;
+            padding: 10px 15px;
+            margin: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .timer-select-container {
+            justify-content: center;
+        }
+
+        .timer-selections {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timer-container {
+            padding: 5%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="title-container">
+        <h1>Trilogy Timer</h1>
+    </header>
+    <main>
+        <div class="timer-select-container">
+            <h2>Select any of the timers below... </h2>
+            <div class="timer-selections">
+                <button id="default" class="stopwatch hidden">Stopwatch</button>
+                <button class="countdown-timer">Timer</button>
+                <button class="interval">Interval Timer</button>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div class="time-display">00:00</div>
+            <div class="timer-options"></div>
+        </div>
+    </main>
+</body>
+</html>
