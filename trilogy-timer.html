@@ -57,6 +57,19 @@
             padding: 5%;
         }
 
+        .time-display {
+            font-size: 6rem;
+            text-align: center;
+        }
+
+        .startBtn {
+            background-color: rgb(95, 244, 95);
+        }
+
+        .resetBtn {
+            background-color: rgb(238, 74, 74);
+        }
+
         
     </style>
 </head>
@@ -74,9 +87,14 @@
             </div>
         </div>
         <div class="timer-container">
-            <div class="time-display">00:00</div>
-            <div class="timer-options"></div>
+            <div class="time-display">00:00:00</div>
+            <div class="timer-options">
+                <button class="startBtn">Start</button>
+                <button class="pauseBtn hidden">Pause</button>
+                <button class="resetBtn">Reset</button>
+            </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
